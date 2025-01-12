@@ -8,49 +8,6 @@ const Footer = () => {
     textAlign: 'center',
   };
 
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'space-around',
-    flexWrap: 'wrap',
-    padding: '20px 0',
-  };
-
-  const sectionStyle = {
-    flex: '1 1 200px',
-    margin: '15px',
-  };
-
-  const headingStyle = {
-    fontSize: '18px',
-    marginBottom: '15px',
-    color: '#ffffff', /* Headings color */
-  };
-
-  const textStyle = {
-    fontSize: '14px',
-    color: '#d9d9d9', /* Text color */
-    textDecoration: 'none',
-  };
-
-  const linkStyle = {
-    display: 'inline-block',
-    margin: '5px 10px',
-    color: '#d9d9d9',
-    textDecoration: 'none',
-  };
-
-  const linkHoverStyle = {
-    color: '#ffffff',
-  };
-
-  const ulStyle = {
-    listStyle: 'none',
-    padding: 0,
-  };
-
-  const liStyle = {
-    margin: '5px 0',
-  };
 
   const bottomStyle = {
     borderTop: '1px solid #ffffff',

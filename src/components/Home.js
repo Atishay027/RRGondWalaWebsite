@@ -9,7 +9,7 @@ const Home = () => {
       <header style={styles.header}>
       <img src={logo} alt="Business Logo" style={styles.logo} />
         <h1 style={styles.welcomeText}>Welcome to Rodmal Rajesh Kumar Gond & Jadibuti Wala </h1>
-        <h1 style={styles.welcomeText}>रोडमल राजेश कुमार गोंड और जड़ी-बूटी वाला में आपका स्वागत है।</h1>
+        <h1 style={styles.welcomeText}>रोडमल राजेश कुमार गोंद और जड़ी-बूटी वाला में आपका स्वागत है।</h1>
       </header>
     </div>
   );
