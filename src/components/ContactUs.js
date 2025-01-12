@@ -1,5 +1,6 @@
 // src/components/ContactUs.js
 import React , { useState, useEffect }from 'react';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const ContactUs = () => {
   const [showScrollUp, setShowScrollUp] = useState(false);
@@ -21,7 +22,7 @@ const ContactUs = () => {
 
 
   // Address to be used in Google Maps
-  const address = "M P MARKET BAZAR NO 2 BHOPALGANJ, BHILWARA, Bhilwara -311001, Rajasthan";
+  const address = "Rodmal RajeshKumar Gondwala Bhilwara";
 
   // Encode the address for the Google Maps URL
   const googleMapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}`;
@@ -37,16 +38,20 @@ const ContactUs = () => {
       {/* Contact Details */}
       <div style={styles.contactDetails}>
         <div style={styles.contactItem}>
-          <h3 style={styles.contactTitle}>Address</h3>
-          {/* <p> M P MARKET BAZAR NO 2 BHOPALGANJ, BHILWARA, Bhilwara -311001, Rajasthan</p> */}
+          <h3 style={styles.contactTitle}>Address:</h3>
+          <p> M P MARKET BAZAR NO 2 BHOPALGANJ, BHILWARA, Bhilwara -311001, Rajasthan</p>
           {/* Address link to open Google Maps */}
+          Google Maps
+          <FaMapMarkerAlt style={styles.icon} />
           <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" style={styles.addressLink}>
             {address}
           </a>
         </div>
 
         <div style={styles.contactItem}>
-          <h3 style={styles.contactTitle}>Phone</h3>
+          <h3 style={styles.contactTitle}>
+          <FaPhoneAlt style={styles.icon} /> Phone:
+          </h3>
           <p>
             <a href="tel:+919413358220" style={styles.phoneLink}>+91 9413358220</a>
           </p>
@@ -57,9 +62,11 @@ const ContactUs = () => {
         
 
         <div style={styles.contactItem}>
-          <h3 style={styles.contactTitle}>Email</h3>
+          <h3 style={styles.contactTitle}>
+          <FaEnvelope style={styles.icon} /> Email:
+          </h3>
           <p>
-            <a href="mailto:info@gondjadibutiwala.com" style={styles.emailLink}>info@gondjadibutiwala.com</a>
+            <a href="mailto:rrgondwala@gmail.com" style={styles.emailLink}>rrgondwala@gmail.com</a>
           </p>
         </div>
       </div>
@@ -99,6 +106,10 @@ const styles = {
   },
   contactItem: {
     marginBottom: '10px',
+  },
+  icon: {
+    marginRight: '10px',
+    color: '#4A2E2A',
   },
   contactTitle: {
     fontSize: '1.2rem',
