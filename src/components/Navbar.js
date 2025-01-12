@@ -25,7 +25,7 @@ const Navbar = () => {
         <li style={styles.navItem}><a href="#contacts" onClick={() => scrollToSection('contact')} style={styles.link}>Contact Us</a></li>
       </ul>
       <div style={styles.contactButtonContainer}>
-        <a style={styles.contactButton}>GST: 27AAEPM1234Q1Z5</a>
+      <span style={styles.contactButton}>GST: 27AAEPM1234Q1Z5</span>
       </div>
     </nav>
   );
@@ -61,7 +61,6 @@ const styles = {
   navLinks: {
     display: 'flex',
     listStyle: 'none',
-    margin: '0',
     padding: '0',
     gap: '15px',
     flex: '2',
